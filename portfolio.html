@@ -1,0 +1,81 @@
+---
+layout: default
+section_id: portfolio
+works:
+  - image: images/portfolio/portfolio-003.jpg
+    title: Flutter 앱 개발
+    link_to: portfolios/portfolio-BLE HeartRate Monitoring 앱 개발.html
+    class: web-mobile
+    desc: Flutter
+  - image: images/portfolio/portfolio-002.jpg
+    title: BNO080라이브러리 포팅
+    link_to: portfolios/portfolio-BNO080라이브러리 포팅.html
+    class: embedded
+    desc: C/C++
+  - image: images/portfolio/portfolio-001.png
+    title: 실시간 그래프 출력 프로그램 개발
+    link_to: portfolios/portfolio-파이썬 GUI프로그램 개발.html
+    class: program
+    desc: Python, Tkinter
+  - image: images/portfolio/portfolio-004.png
+    title: 소방안전빅데이터플랫폼<br>운영 및 유지보수
+    link_to: portfolios/portfolio-소방안전빅데이터플랫폼 운영.html
+    class: management
+    desc: Java, Python, MySQL, postgresql, linux, ETL
+  - image: images/portfolio/portfolio-005.png
+    title: 관세청전자통관시스템 유지보수
+    link_to: portfolios/portfolio-관세청 유지보수.html
+    class: management
+    desc: Java, jsp, javascript, Spring, oracle 
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='program' href='#'>Program Development</a>
+          </li>
+          <li>
+            <a data-cat='web-mobile' href='#'>Web・Mobile Development</a>
+          </li>
+          <li>
+            <a data-cat='embedded' href='#'>Embedded</a>
+          </li>
+          <li>
+            <a data-cat='management' href='#'>Site Management</a>
+          </li>
+        </ul>
+      </div>
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+        {% for work in page.works %}
+          <li class='{{work.class}}'>
+            <a href='{{work.link_to}}'>
+              <img alt="" src="{{site.url}}/{{work.image}}" />
+              <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'>
+                <div class='thumb-info'>
+                  <h3>{{work.title}}</h3>
+                  <p>{{work.desc}}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+  <div class='four spacing'></div>
+  <!-- <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <a class='button' href='#'>See more works</a>
+      </p>
+    </div>
+  </div>
+  <div class='four spacing'></div> -->
+</div>

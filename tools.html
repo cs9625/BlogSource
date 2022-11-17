@@ -1,0 +1,95 @@
+---
+layout: default
+title: "Tools"
+description : "this is meta description"
+#### tools ####
+tools:
+# tool category
+- title: Dev Tools
+  tool:
+  # tool loop in tool category
+  - name: Git
+    image: "images/tools/Git.png"
+    link: https://git-scm.com/
+  # tool loop in tool category
+  - name: Visual Studio Code
+    image: "images/tools/vs-code.png"
+    link: https://code.visualstudio.com/
+  # tool loop in tool category
+  - name: Firebase
+    image: "images/tools_my/firebase.png"
+    link: https://firebase.google.com
+
+# tool category
+- title: Design Tools
+  tool:
+  # tool loop in tool category
+  - name: Figma
+    image: "images/tools_my/figma.png"
+    link: https://www.figma.com/
+  # tool loop in tool category
+  - name: Pixlr X
+    image: "images/tools_my/pixlr.png"
+    link: https://pixlr.com/kr/x/#home
+  # tool loop in tool category
+  - name: Cool Backgrounds
+    image: "images/tools_my/coolbackground.png"
+    link: https://coolbackgrounds.io/    
+  # tool loop in tool category
+  - name: Shape Dividers
+    image: "images/tools_my/shapedivider.png"
+    link: https://www.shapedivider.app/
+  # tool loop in tool category
+  - name: ColorSpace
+    image: "images/tools_my/colorspace.png"
+    link: https://mycolor.space/
+  # tool loop in tool category
+  - name: cssgradient
+    image: "images/tools_my/cssgradient.png"
+    link: https://cssgradient.io/
+  # tool loop in tool category
+  - name: haikei
+    image: "images/tools_my/haikei.png"
+    link: https://app.haikei.app/
+  # tool loop in tool category
+  - name: logomaster.ai(유료)
+    image: "images/tools_my/logomaster.jpg"
+    link: https://logomaster.ai/
+  
+---
+<!-- <section class="section"> -->
+  <div class="full">
+    <div class="row">
+      <div class="medium-3 large-3 columns">
+        <ul class="vertical tabs radius" data-tab role="tablist">
+          {% for tooltab in page.tools %}
+          <!-- <a class='button codeworks radius expand left-align' href="#{{ tooltab.title | slugify }}" role="tab">{{ tooltab.title }}</a> -->
+          <li class="tab-title {% if forloop.first %} active{% endif %}" role="presentation"><a href="#{{ tooltab.title | slugify }}" role="tab" tabindex="0" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="{{ tooltab.title | slugify }}">{{ tooltab.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="medium-9 columns">
+        <div class="tabs-content vertical">
+          {% for tools in page.tools %}
+          <div role="tabpanel" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" class="content {% if forloop.first %} active{% endif %}" id="{{ tools.title | slugify }}">
+            <div class='row'>
+              {% for tool in tools.tool %}
+                <div class='small-6 medium-6 large-6 columns'>
+                  <!-- <div class='mod modTeamMember style-2'> -->
+                    <img class="card-img-top" alt="{{ tool.name }}" src="{{ tool.image | relative_url }}"  style="height:200px;"/>
+                    <div class="card-body">
+                      <h3 class="h5 mb-4">{{tool.name}}</h3>
+                      <a href="{{ tool.link }}" class="button codeworks tiny radius">Visit Site</a>
+                    </div>
+                    <div class='two spacing'></div>
+                  <!-- </div> -->
+                </div>
+              {% endfor %}
+            </div>
+          </div>          
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </section> -->

@@ -1,0 +1,67 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio/portfolio-items/bno080-01.jpg
+  - images/portfolio/portfolio-items/bno080-02.jpg
+  - images/portfolio/portfolio-items/bno080-03.jpg
+  - images/portfolio/portfolio-items/bno080-04.jpg
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="" style="width:800px; height:500px;" />
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <br>
+      <h3>BNO080 IMU 센서 드라이버 포팅</h3>
+      <kbd>embedded</kbd>&nbsp;<kbd>c</kbd>&nbsp;<kbd>python</kbd>
+      <p>
+        <ul>
+          <li>STM32WB55 MCU상에 BNO080 IMU 센서 연결</li>
+          <li>SPI 통신</li>
+          <li>SBNO080 IMU SensorHub 드라이버 포팅</li>
+          <li>센서 데이터 정상 수신 여부를 오픈소스 시뮬레이션 코드를 이용해 확인<a href="https://github.com/thecountoftuscany/PyTeapot-Quaternion-Euler-cube-rotation">(오픈소스 바로가기)</a></li>
+         
+        </ul>
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Client:</strong>
+          자체개발
+        </li>
+        <li>
+          <strong>Date:</strong>
+          2022.10
+        </li>
+      </ul>
+      <!-- <div class='spacing'></div> -->
+      <!-- <a class='button small' href=''>Visit website</a> -->
+      <!-- <div class='spacing'></div> -->
+      <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='/portfolios/portfolio-BLE HeartRate Monitoring 앱 개발.html' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='/portfolio.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='/portfolios/portfolio-파이썬 GUI프로그램 개발.html' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

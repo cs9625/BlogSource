@@ -1,0 +1,67 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio/portfolio-items/bigdata119-01.JPG
+  - images/portfolio/portfolio-items/bigdata119-02.JPG
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="" style="width:800px; height:500px;" />
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <br>
+      <h3>소방안전 빅데이터 플랫폼 운영</h3>
+      <kbd>java</kbd>&nbsp;<kbd>python</kbd>&nbsp;<kbd>mysql</kbd>&nbsp;<kbd>server</kbd>
+      <br>
+      <kbd>linux</kbd>&nbsp;<kbd>etl</kbd>&nbsp;<kbd>brightics</kbd>
+
+      <p>
+        <ul class=''>
+          <li>센터 데이터 수집 프로세스 관리</li>
+          <li>수집된 데이터 검증 및 등록 처리</li>
+          <li>빅데이터 플랫폼 클라우드 서버 운영 관리</li>
+          <li>데이터분석 솔루션 (삼성 Brightics) 운영 관리</li>
+        </ul>
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Client:</strong>
+          소방청
+        </li>
+        <li>
+          <strong>Date:</strong>
+          2021.01 ~ 2022.02
+        </li>
+      </ul>
+      <div class='spacing'></div>
+      <a class='button small' href='https://www.bigdata-119.kr/'>Visit website</a>
+      <!-- <div class='spacing'></div> -->
+      <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='/portfolios/portfolio-BLE HeartRate Monitoring 앱 개발.html' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='/portfolio.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='/portfolios/portfolio-소방안전빅데이터플랫폼 운영.html' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

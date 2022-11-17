@@ -1,0 +1,26 @@
+- name: Home
+  path: index.html
+  section_id: home
+- name: About
+  path: about.html
+  section_id: about
+# - name: Services
+#   path: services.html
+#   section_id: services
+- name: Portfolio
+  path: portfolio.html
+  section_id: portfolio
+- name: Contact
+  path: contact.html
+  section_id: contact
+# - name: Tools
+#   path: tools.html
+#   section_id: contact
+# - name: Blog
+#   path: blog/
+#   section_id: blog
+#   children:
+#     - name: Tech
+#       path: blog/
+#     - name: Etc
+#       path: blogs/

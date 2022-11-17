@@ -1,0 +1,60 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio/portfolio-items/unipass-01.png
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="" style="width:800px; height:500px;" />
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <br>
+      <h3>관세청 전자통관시스템 유지보수</h3>
+      <kbd>java</kbd>&nbsp;<kbd>jsp</kbd>&nbsp;<kbd>spring</kbd>&nbsp;<kbd>javascript</kbd>&nbsp;<kbd>oracle</kbd>
+      <p>
+        <ul class=''>
+          <li>전자통관시스템 환급파트 유지보수 업무 수행</li>
+        </ul>
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Client:</strong>
+          관세청
+        </li>
+        <li>
+          <strong>Date:</strong>
+          2018.01 ~ 2019.07
+        </li>
+      </ul>
+      <div class='spacing'></div>
+      <a class='button small' href='https://www.bigdata-119.kr/'>Visit website</a>
+      <!-- <div class='spacing'></div> -->
+      <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='/portfolios/portfolio-소방안전빅데이터플랫폼 운영.html' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='/portfolio.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='#' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

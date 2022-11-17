@@ -1,0 +1,34 @@
+
+contact_form_action: "https://formspree.io/f/xpznpnjj" # contact form works with : https://formspree.io
+
+timeline:
+  title: "Timeline"
+  text: ""
+  section: timeline
+  # left is the default
+  #start_align: "left"
+  events:
+    - title: "BLE HeartRate 모니터링 앱 개발"
+      year: "2022.11"
+      desc: ""
+      image: images/history/1.jpg
+      alt:
+    - title: "BNO080 IMU 센서 드라이버 포팅 (with STM32WB55)"
+      year: "2022.10"
+      desc: ""
+      image: images/history/2.jpg
+      alt:
+    - title: "실시간 센서정보 출력 프로그램 개발 (with Python)"
+      year: "2022.09"
+      desc: ""
+      image: images/history/3.jpg
+      alt: image alt text
+    - title: "CodeWorks 설립"
+      year: "2022.08"
+      desc: ""
+      image: images/history/4.jpg
+      alt:
+      # you can enforce the alignment
+      align: right
+  end: ""
+
